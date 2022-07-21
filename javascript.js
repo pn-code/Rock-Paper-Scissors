@@ -1,6 +1,7 @@
 //functions
 let playerScore = 0;
 let computerScore = 0;
+let computerChoice;
 
 function getComputerChoice() {
     let random = Math.floor(Math.random() * 10);
@@ -15,9 +16,6 @@ function getComputerChoice() {
         return computerChoice;
     }
 };
-
-let computerChoice;
-
 
 function roundResults (playerChoice, computerChoice) {
 
@@ -38,7 +36,7 @@ function roundResults (playerChoice, computerChoice) {
                playerChoice == "scissors" && computerChoice == "rock" ||
                playerChoice == "paper" && computerChoice == "scissors") {
                 
-                    let result = "YOU LOSE, AHAHAHAHA. IDIOT!";
+                    let result = "YOU LOSE!";
                     playerScore = --playerScore;
                     computerScore = ++computerScore;
                     return result;
@@ -52,7 +50,6 @@ function roundResults (playerChoice, computerChoice) {
     }
     };
     
-
 function playRound() {
 
     getComputerChoice();
@@ -68,14 +65,13 @@ function playRound() {
     console.log(result);
     }
 
-//rock paper scissors
-
-
 function game() {
     for (let i = 0; i < 5; i++) {
         playRound();
     }
-}
+}    
+
+//rock paper scissors
 
 game();
 
