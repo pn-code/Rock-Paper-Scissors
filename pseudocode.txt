@@ -1,0 +1,29 @@
+Create a function for the computer to decide randomly which to pick : 
+
+ > randomly between: rock, paper, or scissors
+ > use a random number generator to decide between the three choices.
+
+
+Get player selection by using the prompt function: rock, paper, or scissors
+
+ > use a string method to add case insensitive properties to new string
+
+
+Create a function that takes in two parameters: playerChoice and computerChoice:
+ 
+ > Make use of conditionals in order to return results: win/loss/draw
+    - if, else if, else...
+    - comparison between playerChoice and computerChoice
+
+
+Make a function that simulates 1 round of Rock, Paper, Scissors
+
+ > Get playerChoice and computerChoice
+ > Compare them with the previous function
+ > Return the results and winner/loser
+
+
+Make a function that includes the last function and loop it
+
+ > Write a "for" loop that runs 5 times and stops
+ > Add score-keeping
