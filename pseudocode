@@ -1,0 +1,105 @@
+//Have a computer decide randomly which to pick : 
+
+let computerChoice = getComputerChoice();
+
+
+//Choose between: rock, paper, or scissors
+
+let playerChoice = prompt("Rock, paper, or scissors")
+console.log("You chose " +playerChoice);
+console.log("The computer chose " +computerChoice);
+
+//Get player selections : rock, paper, or scissors
+
+
+//Function that plays a single round of rps: Take 2 parameters and declare w
+
+// conditionals for win/loss
+
+if (computerChoice == playerChoice) {
+    let result = "It's a draw";
+    return result;
+
+} else if (playerChoice = "rock", computerChoice = "scissors") {
+    let result = "You win!";
+    return result;
+
+} else if (playerChoice = "scissors", computerChoice = "paper") {
+    let result = "You win!";
+    return result;
+
+} else if (playerChoice = "paper", computerChoice = "rock") {
+    let result = "You win!";
+    return result;
+
+}else {
+    let result = "You lose." ; 
+    return result;
+}
+
+
+
+
+//Function for 1 round
+
+function playRound (playerChoice, computerChoice) {
+
+let computerChoice = getComputerChoice();
+let playerChoice = prompt("Rock, paper, or scissors")
+
+console.log("You chose " +playerChoice);
+console.log("The computer chose " +computerChoice);
+
+if (computerChoice == playerChoice) {
+    let result = "It's a draw";
+    return result;
+
+} else if (playerChoice == "rock" && computerChoice == "scissors" ||
+           playerChoice == "scissors", computerChoice == "paper" ||
+           playerChoice == "paper", computerChoice == "rock") {
+
+                let result = "You win!";
+                return result;
+
+} else if (playerChoice == "rock" && computerChoice == "paper" ||
+           playerChoice == "scissors", computerChoice == "rock" ||
+           playerChoice == "paper", computerChoice == "scissors") {
+            
+                let result = "YOU LOSE, AHAHAHAHA. IDIOT!";
+                return result;
+
+}else {
+    let result = "null" ; 
+    return result;
+}
+};
+
+//switch
+
+switch (playerChoice = "rock") {
+    case value:
+        
+        break;
+
+    default:
+        break;
+}
+
+
+let result = playRound(playerChoice, computerChoice);
+console.log("Round 1: " +result);
+
+
+//single play round
+
+let computerChoice = getComputerChoice();
+
+
+let playerChoice = prompt("Rock, paper, or scissors")
+
+console.log("You chose " +playerChoice);
+console.log("The computer chose " +computerChoice);
+
+
+let result = playRound(playerChoice, computerChoice);
+console.log("Round 1: " +result);
