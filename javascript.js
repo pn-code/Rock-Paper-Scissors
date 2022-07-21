@@ -55,7 +55,8 @@ function playRound() {
     getComputerChoice();
     computerChoice = getComputerChoice();
     
-    let playerChoice = prompt("Rock, paper, or scissors");
+    let playerselect = prompt("Rock, paper, or scissors");
+    let playerChoice = playerselect.toLowerCase();
     
     console.log("You chose " +playerChoice);
     console.log("The computer chose " +computerChoice);
@@ -77,7 +78,7 @@ game();
 
 if (playerScore > 0) {
     console.log("Congratulations, you won by " + playerScore)
-}else if (playerScore == computerScore){
+}else if (playerScore === computerScore){
     console.log("There has been a draw.")
 }else{
     console.log("Unfortunately, you have lost by " + computerScore)
