@@ -1,0 +1,43 @@
+body {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    padding: 100px;
+}
+
+button{
+    margin: 100px;
+    padding: 50px 100px;
+    font-size: 36px;
+    font-weight: bold;
+}
+
+#score{
+    display: flex;
+    justify-content: center;
+}
+
+#results{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 50px;
+}
+
+div{
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.endMessage{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+}
