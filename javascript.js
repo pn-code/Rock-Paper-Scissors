@@ -5,15 +5,19 @@ let playerChoice;
 
 
 function getComputerChoice() {
+    
     let random = Math.floor(Math.random() * 3);
+
     if (random === 0) {
-        let computerChoice = "rock";
+        computerChoice = "rock";
         return computerChoice;
+
     } else if (random === 1) {
-        let computerChoice = "paper";
+        computerChoice = "paper";
         return computerChoice;
+
     } else {
-        let computerChoice = "scissors";
+        computerChoice = "scissors";
         return computerChoice;
     }
 };
